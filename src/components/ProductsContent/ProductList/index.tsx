@@ -1,5 +1,5 @@
+import React, { useContext, useEffect } from "react";
 import { observer } from "mobx-react";
-import { useContext, useEffect } from "react";
 import { ProductStoreContext } from "../../../store/products";
 import { Loader } from "../Loader";
 import { ProductItem } from "./ProductItem";

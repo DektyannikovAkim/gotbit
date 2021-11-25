@@ -189,7 +189,7 @@ export class ProductStore {
     this.products.sort(this.sortingOptions);
   }
 
-  sortingOptions(a: ProductModel, b: ProductModel) {
+  sortingOptions = (a: ProductModel, b: ProductModel) => {
     if (a.done === true && b.done === false) {
       return 1;
     } else if (a.done === false && b.done === true) {

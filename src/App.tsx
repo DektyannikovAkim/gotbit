@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { ConnectBtn } from "./components/Connect";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";

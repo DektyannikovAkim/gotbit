@@ -1,5 +1,5 @@
+import React, { useContext } from "react";
 import { observer } from "mobx-react";
-import { useContext } from "react";
 import { ProductStoreContext } from "../../../store/products";
 import { SelectorTypeProd } from "./SelectorTypeProd";
 import * as styles from "./style";

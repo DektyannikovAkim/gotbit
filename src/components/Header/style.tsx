@@ -14,8 +14,8 @@ export const WrapperForLogo = styled.div`
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  width: 10%;
-  height: 13vh;
+  width: 130px;
+  height: 60px;
   background-color: #ff9121;
 `;
 

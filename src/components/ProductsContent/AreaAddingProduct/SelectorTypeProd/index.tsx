@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { ProductStoreContext } from "../../../../store/products";
 import * as styles from "./style";
 import { Types } from "./Types";
