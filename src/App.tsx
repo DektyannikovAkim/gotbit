@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import { ConnectBtn } from "./components/Connect";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { ProductStoreContext } from "./store/products";
+import * as styles from "./style";
+import { ProductsContent } from "./components/ProductsContent";
+import { observer } from "mobx-react";
 
 function App() {
+  const context = useContext(ProductStoreContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <styles.Parant>
+      <Header />
+      <styles.Content>
+        {context.authorizationState ? <ProductsContent /> : <ConnectBtn />}
+      </styles.Content>
+      <Footer />
+    </styles.Parant>
   );
 }
 
-export default App;
+export default observer(App);
