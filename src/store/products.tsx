@@ -93,6 +93,7 @@ export class ProductStore {
 
   setProductName(e: React.ChangeEvent<HTMLInputElement>) {
     this.productName = e.target.value;
+    console.log("hui")
   }
 
   setProductPrice(e: React.ChangeEvent<HTMLInputElement>) {
@@ -233,10 +234,16 @@ export class ProductStore {
     } else if (a.title > b.title) {
       return 1;
     } else return 0;
-  }
+  };
 
   setLoading() {
     this.loading = !this.loading;
+  }
+
+  changeInputRange(e: React.FormEvent<HTMLInputElement>) {
+    let value = e.currentTarget.value;
+    console.log(e.currentTarget.value);
+    e.currentTarget.style.background = `linear-gradient(to right, #82CFD0 0%, #82CFD0 ${value}%, #fff ${value}%, white 100%)`;
   }
 }
 

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
+import styled from "styled-components";
 import { ProductStoreContext } from "../../../../../store/products";
 import * as styles from "./style";
 import { TypeItem } from "./TypeItem";

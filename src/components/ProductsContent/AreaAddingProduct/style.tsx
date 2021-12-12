@@ -20,3 +20,20 @@ export const Input = styled.input`
     margin-bottom: 5px;
   }
 `;
+
+export const InputRange = styled.input`
+  background: linear-gradient(
+    to right,
+    #82cfd0 0%,
+    #82cfd0 50%,
+    #fff 50%,
+    #fff 100%
+  );
+  border: solid 1px #82cfd0;
+  border-radius: 8px;
+  height: 7px;
+  width: 356px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+`;
